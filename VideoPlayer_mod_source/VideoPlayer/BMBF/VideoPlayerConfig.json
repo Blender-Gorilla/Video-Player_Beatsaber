@@ -1,0 +1,15 @@
+{
+  "videoPath": "/sdcard/ModData/com.beatgames.beatsaber/Mods/VideoPlayer/video.mp4",
+  "posX": 0.0,
+  "posY": 2.5,
+  "posZ": 4.0,
+  "rotX": 0.0,
+  "rotY": 0.0,
+  "rotZ": 0.0,
+  "scaleX": 4.0,
+  "scaleY": 2.25,
+  "loop": true,
+  "autoPlay": true,
+  "volume": 0.5,
+  "screenCurvature": 0.0
+}

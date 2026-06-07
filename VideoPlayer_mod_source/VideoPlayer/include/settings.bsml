@@ -1,0 +1,48 @@
+<bg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/RedBrumbler/Quest-BSML-Docs/main/schema.xsd">
+
+  <vertical spacing="1" pad="4" vertical-fit="PreferredSize">
+
+    <!-- ── Title ── -->
+    <text text="Video Player Settings" font-size="6" align="Center" font-color="#FFFFFF"/>
+    <horizontal spacing="0" pad-top="2" pad-bottom="2">
+      <action-button text="▶ Play"   on-click="OnPlayClicked"   pref-width="28" pref-height="8"/>
+      <action-button text="⏸ Pause"  on-click="OnPauseClicked"  pref-width="28" pref-height="8"/>
+      <action-button text="⏹ Stop"   on-click="OnStopClicked"   pref-width="28" pref-height="8"/>
+    </horizontal>
+
+    <!-- ── Video file path ── -->
+    <string-setting text="Video Path" value="videoPath" apply-on-change="false"/>
+
+    <!-- ── Position ── -->
+    <text text="Position" font-size="4" align="Left" font-color="#AAAAFF"/>
+    <slider-setting text="Pos X" value="posX" min="-10" max="10"  increment="0.1" apply-on-change="false"/>
+    <slider-setting text="Pos Y" value="posY" min="-5"  max="10"  increment="0.1" apply-on-change="false"/>
+    <slider-setting text="Pos Z" value="posZ" min="0"   max="20"  increment="0.1" apply-on-change="false"/>
+
+    <!-- ── Rotation ── -->
+    <text text="Rotation" font-size="4" align="Left" font-color="#AAFFAA"/>
+    <slider-setting text="Rot X" value="rotX" min="-180" max="180" increment="1" apply-on-change="false"/>
+    <slider-setting text="Rot Y" value="rotY" min="-180" max="180" increment="1" apply-on-change="false"/>
+    <slider-setting text="Rot Z" value="rotZ" min="-180" max="180" increment="1" apply-on-change="false"/>
+
+    <!-- ── Scale ── -->
+    <text text="Scale" font-size="4" align="Left" font-color="#FFAAAA"/>
+    <slider-setting text="Width"  value="scaleX" min="0.5" max="12" increment="0.1" apply-on-change="false"/>
+    <slider-setting text="Height" value="scaleY" min="0.5" max="8"  increment="0.1" apply-on-change="false"/>
+
+    <!-- ── Misc ── -->
+    <text text="Playback" font-size="4" align="Left" font-color="#FFFFAA"/>
+    <slider-setting text="Volume"    value="volume"    min="0" max="1"   increment="0.05" apply-on-change="false"/>
+    <slider-setting text="Curvature" value="curvature" min="0" max="0.5" increment="0.01" apply-on-change="false"/>
+    <toggle-setting text="Loop"      value="loop"      apply-on-change="false"/>
+    <toggle-setting text="Auto Play" value="autoPlay"  apply-on-change="false"/>
+
+    <!-- ── Actions ── -->
+    <horizontal spacing="2" pad-top="4">
+      <action-button text="Apply &amp; Save" on-click="OnApplyClicked"  pref-width="44" pref-height="9" font-color="#00FF88"/>
+      <action-button text="Reload Video"    on-click="OnReloadClicked" pref-width="44" pref-height="9" font-color="#FFAA00"/>
+    </horizontal>
+
+  </vertical>
+</bg>

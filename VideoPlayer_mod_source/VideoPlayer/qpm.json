@@ -1,0 +1,53 @@
+{
+  "info": {
+    "name": "VideoPlayer",
+    "id": "VideoPlayer",
+    "version": "1.0.0",
+    "url": null,
+    "additionalData": {
+      "modLink": null,
+      "soLink": null,
+      "overrideSoName": "VideoPlayer"
+    }
+  },
+  "workspace": {
+    "qmodOutput": "VideoPlayer.qmod",
+    "packagePath": "extern/includes",
+    "libPath": "extern/libs",
+    "additionalData": {
+      "includedInQmod": ["BMBF/mod.json", "BMBF/VideoPlayerConfig.json"]
+    }
+  },
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "versionRange": "^3.12.1",
+      "additionalData": {}
+    },
+    {
+      "id": "custom-types",
+      "versionRange": "^0.14.0",
+      "additionalData": {}
+    },
+    {
+      "id": "bsml",
+      "versionRange": "^1.12.0",
+      "additionalData": {}
+    },
+    {
+      "id": "config-utils",
+      "versionRange": "^2.3.0",
+      "additionalData": {}
+    },
+    {
+      "id": "paper",
+      "versionRange": "^0.1.0",
+      "additionalData": {}
+    },
+    {
+      "id": "scotland2",
+      "versionRange": "^1.0.0",
+      "additionalData": {}
+    }
+  ]
+}
